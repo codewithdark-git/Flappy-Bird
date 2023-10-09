@@ -10,10 +10,10 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
-PLAYER = 'D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\Bird.png'
-BACKGROUND = 'D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\Background.png'
-PIPE = 'D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\pipe.png'
-Base = 'D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\Base.png'
+PLAYER = 'gallery\sirpest\Bird.png'
+BACKGROUND = 'gallery\sirpest\Background.png'
+PIPE = 'gallery\sirpest\pipe.png'
+Base = 'gallery\sirpest\Base.png'
 
 def welcomeScreen():
 
@@ -206,35 +206,35 @@ if __name__ == "__main__":
   FPSCLOCK = pygame.time.Clock()
   pygame.display.set_caption('Flappy Bird by CodeWithHarry')
   GAME_SPRITES['numbers'] = (
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\ibi.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\A.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\B.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\C.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\D.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\E.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\F.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\G.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\H.png').convert_alpha(),
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\I.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\ibi.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\A.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\B.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\C.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\D.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\E.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\F.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\G.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\H.png').convert_alpha(),
+    pygame.image.load('gallery\sirpest\I.png').convert_alpha(),
   )
 
   GAME_SPRITES['message'] = pygame.image.load(
-    'D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\message.png').convert_alpha()
+    'gallery\sirpest\message.png').convert_alpha()
   GAME_SPRITES['Base'] = pygame.image.load(
-    'D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\Base.png').convert_alpha()
+    'gallery\sirpest\Base.png').convert_alpha()
   GAME_SPRITES['pipe'] = (pygame.transform.rotate(
-    pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\pipe.png').convert_alpha(),
-    180), pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\pipe.png').convert_alpha())
+    pygame.image.load('gallery\sirpest\pipe.png').convert_alpha(),
+    180), pygame.image.load('gallery\sirpest\pipe.png').convert_alpha())
 
   # Game sounds
-  GAME_SOUNDS['die'] = pygame.mixer.Sound('D:\CodeBackground\pythonProject\Flapbird\gallery\Audio\die.wav')
-  GAME_SOUNDS['hit'] = pygame.mixer.Sound('D:\CodeBackground\pythonProject\Flapbird\gallery\Audio\hit.wav')
-  GAME_SOUNDS['point'] = pygame.mixer.Sound('D:\CodeBackground\pythonProject\Flapbird\gallery\Audio\point.wav')
-  GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('D:\CodeBackground\pythonProject\Flapbird\gallery\Audio\swoosh.wav')
-  GAME_SOUNDS['wing'] = pygame.mixer.Sound('D:\CodeBackground\pythonProject\Flapbird\gallery\Audio\wing.wav')
+  GAME_SOUNDS['die'] = pygame.mixer.Sound('gallery\Audio\die.wav')
+  GAME_SOUNDS['hit'] = pygame.mixer.Sound('gallery\Audio\hit.wav')
+  GAME_SOUNDS['point'] = pygame.mixer.Sound('gallery\Audio\point.wav')
+  GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('gallery\Audio\swoosh.wav')
+  GAME_SOUNDS['wing'] = pygame.mixer.Sound('gallery\Audio\wing.wav')
 
-  GAME_SPRITES['background'] = pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\Background.png').convert()
-  GAME_SPRITES['player'] = pygame.image.load('D:\CodeBackground\pythonProject\Flapbird\gallery\sirpest\Bird.png').convert_alpha()
+  GAME_SPRITES['background'] = pygame.image.load('gallery\sirpest\Background.png').convert()
+  GAME_SPRITES['player'] = pygame.image.load('gallery\sirpest\Bird.png').convert_alpha()
 
   while True:
     welcomeScreen()
